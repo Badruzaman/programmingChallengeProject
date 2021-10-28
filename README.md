@@ -8,4 +8,4 @@ nmarcysfa900jkifh  , 3.781, 2.11, ....
 
 The output should be 2MB in size. Once file generation is done the output should be available as a link which can be then downloaded by clicking on it. Also, there should be a button on the page so by clicking on this button the total number of each random objects will be displayed.
 
-Note: The backend API must be written using Flask (Python). All the communication between frontend and backend MUST be done via these APIs only
+**Note:** The backend API must be written using Flask (Python). All the communication between frontend and backend MUST be done via these APIs only
