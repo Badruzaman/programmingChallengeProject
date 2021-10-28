@@ -3,8 +3,8 @@
 from helper import *
 import os
 
+fileName = 'output_file.txt'
 def generate_file():
-    fileName = 'output_file.txt'
     open(fileName, 'w')
     fileSize = os.stat(fileName).st_size
     with open(fileName, 'a') as File:
@@ -28,19 +28,18 @@ def get_object_count():
     count_alphabetical_strings = 0
     count_alphanumerics = 0
     try:
-        file = open('output_file.txt')
-        result = file.read()
-        file.close()
-        for item in result.split(','):
-            _item = item.strip()
-            if is_float(_item):
-                count_real_numbers += 1
-            elif is_Integer(_item):
-                count_integers += 1
-            elif _item.isalpha():
-                count_alphabetical_strings += 1
-            else:
-                count_alphanumerics += 1
+        with open(fileName) as file:
+            result = file.read()
+            for item in result.split(','):
+                _item = item.strip()
+                if is_float(_item):
+                    count_real_numbers += 1
+                elif is_Integer(_item):
+                    count_integers += 1
+                elif _item.isalpha():
+                    count_alphabetical_strings += 1
+                else:
+                    count_alphanumerics += 1
     except ValueError:
         return ValueError
     return {'alphabetical_strings': count_alphabetical_strings, 'real_numbers': count_real_numbers, 'integers': count_integers, 'alphanumerics': count_alphanumerics}
