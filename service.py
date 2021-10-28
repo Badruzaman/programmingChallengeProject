@@ -11,16 +11,14 @@ def generate_file():
         while fileSize <= 2000000:
             function_list = [random_alphanumerics, random_string, random_int, random_float]
             dataType = random.choice(function_list)
-            if dataType == random_alphanumerics: # our alphanumeric string needs to have whitespaces before and after it so let's use an if statement for that
+            if dataType == random_alphanumerics:
                 output = random_alphanumerics()
-                i = random.randint(0, 9) # the whitespaces shouldn't be more than 9
-                output = ' '*i + output + ' '*i # put them altogether
+                i = random.randint(0, 9)
+                output = ' '*i + output + ' '*i
             else:
                 output = dataType()
             File.write(output + ', ')
             fileSize = os.stat(fileName).st_size
-            print(fileSize)
-        print('Final file size:', fileSize / 1000000, 'MB')
         File.close()
     return fileName
 
