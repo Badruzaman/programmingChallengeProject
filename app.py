@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 @app.route('/')
-def hello_world():
-    return 'hello world'
+def index():
+    return 'This is a programming challenge'
 
 @app.route('/api/v1/getfile/')
 def gettextfile():
