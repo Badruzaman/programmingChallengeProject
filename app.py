@@ -14,10 +14,9 @@ def hello_world():
 def gettextfile():
     try:
         filename = generate_file()
-        # filename ='Badruzzaman.pdf'
         return send_file(filename), 200
     except:
-        print('something went wrong')
+        return 404
 
 @app.route('/api/v1/objectcount/')
 def objectcount():
@@ -25,7 +24,7 @@ def objectcount():
         result = get_object_count()
         return jsonify(result), 200
     except:
-        print('something went wrong')
+        return 404
 
 
 if __name__ == '__main__':
