@@ -40,6 +40,7 @@ def get_object_count():
                     count_alphabetical_strings += 1
                 else:
                     count_alphanumerics += 1
+            result = {'alphabetical_strings': count_alphabetical_strings, 'real_numbers': count_real_numbers, 'integers': count_integers, 'alphanumerics': count_alphanumerics}
     except ValueError:
         return ValueError
-    return {'alphabetical_strings': count_alphabetical_strings, 'real_numbers': count_real_numbers, 'integers': count_integers, 'alphanumerics': count_alphanumerics}
+    return result
