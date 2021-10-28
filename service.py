@@ -8,7 +8,7 @@ def generate_file():
     open(fileName, 'w')
     fileSize = os.stat(fileName).st_size
     with open(fileName, 'a') as File:
-        while fileSize <= 2000000:
+        while fileSize < 2090000:
             function_list = [random_alphanumerics, random_string, random_int, random_float]
             dataType = random.choice(function_list)
             if dataType == random_alphanumerics:
