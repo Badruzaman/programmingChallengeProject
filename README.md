@@ -22,11 +22,11 @@ The output should be 2MB in size. Once file generation is done the output should
 
 
 # Description
-## There web api I have built for doing the challenge
-* /api/v1/generatefil for file generate 
+## Three web api I have built for doing the challenge
+* /api/v1/generatefile for file generate 
 * /api/v1/getfile  for generated file download
 * /api/v1/objectcount for four types of count
 
-## detail
-Api /api/v1/generatefile is used for generate a file which size is 2MB and returns an API /api/v1/getfile to be downloaded the generated file
+## Detail
+Api /api/v1/generatefile is used for generate a file which size is 2MB and returns an URL (API) /api/v1/getfile to be downloaded the generated file
 and /api/v1/objectcount counts all four types of object already generated
