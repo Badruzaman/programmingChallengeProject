@@ -1,5 +1,6 @@
 
 # Python flask web API
+This repository contains the source code that I demonstrate in my prgramming challenge.
 
 **Challenge Description:**
 
