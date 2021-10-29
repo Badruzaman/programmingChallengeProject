@@ -13,3 +13,8 @@ hisadfnnasd, 126263, assfdgsga12348fas, 13123.123, lizierdjfklaasf, 123192u3kjwe
 The output should be 2MB in size. Once file generation is done the output should be available as a link which can be then downloaded by clicking on it. Also, there should be a button on the page so by clicking on this button the total number of each random objects will be displayed.
 
 **Note:** The backend API must be written using Flask (Python). All the communication between frontend and backend MUST be done via these APIs only
+
+# Requirements
+* Python 3.9.3
+* create virtualenv 
+* flask_cors 3.0.10
