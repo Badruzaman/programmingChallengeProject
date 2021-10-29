@@ -16,8 +16,10 @@ The output should be 2MB in size. Once file generation is done the output should
 
 # Requirements
 * Python 3.9.3
-* create virtualenv 
+* flask 2.0.1
 * flask_cors 3.0.10
+* create virtualenv 
+
 
 # Description
 ## There web api I have built for doing the challenge
@@ -25,5 +27,6 @@ The output should be 2MB in size. Once file generation is done the output should
 * /api/v1/getfile  for generated file download
 * /api/v1/objectcount for four types of count
 
+## detail
 Api /api/v1/generatefile is used for generate a file which size is 2MB and returns an API /api/v1/getfile to be downloaded the generated file
 and /api/v1/objectcount counts all four types of object already generated
