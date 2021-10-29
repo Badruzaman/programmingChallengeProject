@@ -27,6 +27,9 @@ The output should be 2MB in size. Once file generation is done the output should
 * /api/v1/getfile/  for generated file download
 * /api/v1/objectcount/ for four type of objects count
 
-## Detail
+## API Detail
 Api /api/v1/generatefile is used for generate a file which size is 2MB and returns an URL (API) /api/v1/getfile to be downloaded the generated file
 and /api/v1/objectcount counts all four types of object already generated
+
+## Code Detail
+I have written app.py for building all Api, and the file sevice.py is for all required method like generate file and counting objects and these type of job is done through helper.py file and config.py is for having base url 
