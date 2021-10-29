@@ -23,9 +23,9 @@ The output should be 2MB in size. Once file generation is done the output should
 
 # Description
 ## Three web api I have built for doing the challenge
-* /api/v1/generatefile for file generate 
-* /api/v1/getfile  for generated file download
-* /api/v1/objectcount for four type of objects count
+* /api/v1/generatefile/ for file generate 
+* /api/v1/getfile/  for generated file download
+* /api/v1/objectcount/ for four type of objects count
 
 ## Detail
 Api /api/v1/generatefile is used for generate a file which size is 2MB and returns an URL (API) /api/v1/getfile to be downloaded the generated file
