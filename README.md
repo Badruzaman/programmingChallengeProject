@@ -38,6 +38,8 @@ I have written app.py for building all Api, and the file service.py is for all r
 
 ![](/images/file_generate.PNG)
 
+![](/images/file_download.PNG)
 
+![](/images/object_count.PNG)
 
 
