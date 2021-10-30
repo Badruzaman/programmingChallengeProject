@@ -32,4 +32,4 @@ Api /api/v1/generatefile is used for generate a file which size is 2MB and retur
 and /api/v1/objectcount counts four types of object already generated
 
 ## Code Detail
-I have written app.py for building all Api, and the file service.py is for all required method like generate file and counting objects and these type of job is done through helper.py file and config.py is for having base url 
+I have written app.py for building all Api, and the file service.py is for all required methods like generate file, counting objects and these type of job is done through helper.py file and config.py is for having the base url 
